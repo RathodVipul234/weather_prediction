@@ -26,6 +26,7 @@ def weather_data():
         wind_speed_lbl = Label(window,font="Times 30 bold",text=f"Wind :{wind_speed} km/h")
         date_time_lbl = Label(window,font="Times 30 bold",text=f"date_time :{date_time}")
         temp_city_lbl.grid(row=4,column=0)
+
         weather_descriptions_lbl.grid(row=5,column=0)
         humidity_lbl.grid(row=6,column=0)
         wind_speed_lbl.grid(row=7,column=0)
