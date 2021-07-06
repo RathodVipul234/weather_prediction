@@ -18,7 +18,7 @@ def weather_data():
         weather_descriptions = api_data['weather'][0]['description']
         humidity = api_data['main']['humidity']
         wind_speed = api_data['wind']['speed']
-        date_time = datetime.now().strftime("%d %b %y | %I:%M:%S:%P")
+        date_time = datetime.now().strftime("%d %b %y | %I:%M:%S")
 
         temp_city_lbl = Label(window,font="Times 30 bold",text=f"Temperature :{format_temp_city} C")
         weather_descriptions_lbl = Label(window,font="Times 30 bold",text=f"Weather :{weather_descriptions}")
